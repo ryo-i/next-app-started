@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { pageSize } from '../styles/mixin';
 import cssVariables from '../styles/variables.json';
-// import '../styles/globals.css'
 
 const variable = cssVariables.variable;
 
@@ -33,6 +33,16 @@ const GlobalStyle = createGlobalStyle`
     }
     p {
       line-height: 1.75;
+    }
+  }
+  main {
+    ${pageSize}
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.25em;
+      color: ${variable.baseColor};
     }
   }
 `;
