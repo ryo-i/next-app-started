@@ -4,7 +4,7 @@ import Data from '../data/data.json';
 
 
 const innerJson = Data.inner;
-
+console.log(innerJson);
 
 // Component
 function Inner() {
@@ -14,12 +14,19 @@ function Inner() {
 
   return (
     <>
-      {innerJson.map((innerJson, index) =>
-        <section key={ index }>
-          <h2>{ innerJson.title }</h2>
-          <p dangerouslySetInnerHTML={{ __html: innerJson.text }}></p>
+      {
+        innerJson.length >= 1 ?
+        innerJson.map((innerJson, index) =>
+          <section key={ index }>
+            <h2>{ innerJson.title }</h2>
+            <p dangerouslySetInnerHTML={{ __html: innerJson.text }}></p>
+          </section>
+        ) :
+        <section>
+          <h2>内容が無いよう</h2>
+          <p>へんじがない、ただのしかばねのようだ。</p>
         </section>
-      )}
+      }
     </>
   );
 }
