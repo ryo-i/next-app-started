@@ -1,24 +1,38 @@
-import React  from 'react';
+import Head from 'next/head'
+import CommonHead from '../components/CommonHead';
+import Header from '../components/Header';
+import Profile from '../components/Profile';
+import Footer from '../components/Footer';
+
+
+const aboutTitle = 'このアプリについて';
+const aboutText = 'アプリの概要をここに書く。';
+
 
 // Component
 function About() {
     return (
-        <div className="inner">
+        <>
+        <Head>
+            <title>{ aboutTitle }</title>
+            <meta name="description" content={ aboutTitle } />
+            <meta property="og:title" content={ aboutText } />
+            <meta property="og:description" content={ aboutText } />
+            <CommonHead />
+        </Head>
+
+        <Header />
+        <main>
+            <h1>{ aboutTitle }</h1>
+            <p dangerouslySetInnerHTML={{ __html: aboutText }}></p>
             <section>
-                <h2>タイトル</h2>
-                <p>説明説明説明説明説明説明説明説明</p>
+                <h2>使い方</h2>
+                <p>アプリの説明説明説明説明説明説明説明説明</p>
             </section>
-            <section>
-                <h2>イイダリョウ</h2>
-                <p>フロントエンドエンジニア。神奈川に住まう四十路のオジキ。 DTP→Webデザイナーから転向し今に至る。引き続きコツコツの日々。ブログも書いてます。 Webづくり やりたい時が 始め時！</p>
-                <ul>
-                    <li><a href="https://www.i-ryo.com">ブログ</a></li>
-                    <li><a href="https://twitter.com/idr_zz">Twitter</a></li>
-                    <li><a href="https://qiita.com/i-ryo">Qiita</a></li>
-                    <li><a href="https://github.com/ryo-i">GitHub</a></li>
-                </ul>
-            </section>
-        </div>
+            <Profile />
+        </main>
+        <Footer />
+        </>
     );
 }
 

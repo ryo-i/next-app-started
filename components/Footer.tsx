@@ -1,10 +1,9 @@
-import React from 'react';
 import Data from '../data/data.json';
 import styled from 'styled-components';
 import { pageSize } from '../styles/mixin';
 
 
-const text = Data.data.footer.text;
+const text = Data.footer.text;
 
 
 // Style

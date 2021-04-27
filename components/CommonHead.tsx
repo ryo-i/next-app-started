@@ -1,15 +1,18 @@
-import React, { useEffect }  from 'react';
+import Data from '../data/data.json';
+
+
+const url = Data.head.url;
 
 
 // Component
 function CommonHead() {
   return (
     <>
-      <meta property="og:url" content="https://ryo-i.github.io/react-app-started/" />
-      <meta property="og:image" content="https://ryo-i.github.io/react-app-started/ogp.png" />
+      <meta property="og:url" content={url} />
+      <meta property="og:image" content={url + "ogp.png"} />
       <meta property="og:type" content="website" />
       <meta name="twitter:site" content="@idr_zz" />
-      <meta name="twitter:image" content="https://ryo-i.github.io/react-app-started/ogp.png" />
+      <meta name="twitter:image" content={url + "ogp.png"} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />

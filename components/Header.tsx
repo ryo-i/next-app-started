@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import Data from '../data/data.json';
 import styled from 'styled-components';
@@ -7,8 +6,8 @@ import cssVariables from '../styles/variables.json';
 
 
 const variable = cssVariables.variable;
-const title = Data.data.header.title;
-const text = Data.data.header.text;
+const title = Data.header.title;
+const text = Data.header.text;
 
 
 // Style

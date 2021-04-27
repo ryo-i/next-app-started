@@ -6,21 +6,20 @@ import Footer from '../components/Footer';
 import Data from '../data/data.json';
 
 
-const data = Data.data;
-const mainTitle = data.main.title;
-const mainText = data.main.text;
-const aboutTitle = data.about.title;
-const aboutText = data.about.text;
+const headerTitle = Data.header.title;
+const headerText = Data.header.text;
+const mainTitle = Data.main.title;
+const mainText = Data.main.text;
 
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{ mainTitle }</title>
-        <meta name="description" content={ mainTitle } />
-        <meta property="og:title" content={ mainText } />
-        <meta property="og:description" content={ mainText } />
+        <title>{ headerTitle }</title>
+        <meta name="description" content={ headerText } />
+        <meta property="og:title" content={ headerTitle } />
+        <meta property="og:description" content={ headerText } />
         <CommonHead />
       </Head>
 

@@ -3,7 +3,7 @@ import { hello } from '../modules/hello/hello';
 import Data from '../data/data.json';
 
 
-const innerJson = Data.data.inner;
+const innerJson = Data.inner;
 
 
 // Component
@@ -13,14 +13,14 @@ function Inner() {
   });
 
   return (
-    <div className="inner">
+    <>
       {innerJson.map((innerJson, index) =>
         <section key={ index }>
           <h2>{ innerJson.title }</h2>
           <p dangerouslySetInnerHTML={{ __html: innerJson.text }}></p>
         </section>
       )}
-    </div>
+    </>
   );
 }
 
