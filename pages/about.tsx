@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import CommonHead from '../components/CommonHead';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
 import Footer from '../components/Footer';
@@ -18,7 +17,6 @@ function About() {
             <meta name="description" content={ aboutTitle } />
             <meta property="og:title" content={ aboutText } />
             <meta property="og:description" content={ aboutText } />
-            <CommonHead />
         </Head>
 
         <Header />

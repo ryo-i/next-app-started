@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import CommonHead from '../components/CommonHead';
 import { createGlobalStyle } from 'styled-components';
 import { pageSize } from '../styles/mixin';
 import cssVariables from '../styles/variables.json';
@@ -51,6 +53,9 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <CommonHead />
+      </Head>
       <GlobalStyle />
       <Component {...pageProps} />
     </>
