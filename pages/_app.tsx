@@ -10,6 +10,14 @@ const variable = cssVariables.variable;
 
 // Style
 const GlobalStyle = createGlobalStyle`
+  .no-fouc {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .fouc {
+    visibility: visible;
+    opacity: 1;
+  }
   body {
     margin: 0;
     padding: 0;
@@ -49,14 +57,6 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.25em;
       color: ${variable.baseColor};
     }
-  }
-  .no-fouc {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .fouc {
-    visibility: visible;
-    opacity: 1;
   }
 `;
 
