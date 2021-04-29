@@ -11,8 +11,9 @@ class MyDocument extends Document {
       <Html className="no-fouc">
         <Head />
         <body>
-          <Main />
-          <NextScript />
+            <script> </script>
+            <Main />
+            <NextScript />
         </body>
       </Html>
     );
