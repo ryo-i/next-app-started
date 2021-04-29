@@ -1,3 +1,4 @@
+import React, { useEffect }  from 'react';
 import Head from 'next/head'
 import CommonHead from '../components/CommonHead';
 import { createGlobalStyle } from 'styled-components';
@@ -49,10 +50,28 @@ const GlobalStyle = createGlobalStyle`
       color: ${variable.baseColor};
     }
   }
+  .no-fouc {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .fouc {
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 
+// FOUC measures
+const removeFouc = (foucElement) => {
+  foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
+};
+
+
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    removeFouc(document.documentElement);
+  });
+
   return (
     <>
       <Head>
