@@ -4,6 +4,7 @@ import CommonHead from '../components/CommonHead';
 import { createGlobalStyle } from 'styled-components';
 import { pageSize } from '../styles/mixin';
 import cssVariables from '../styles/variables.json';
+import '../styles/styles.css';
 
 const variable = cssVariables.variable;
 
@@ -50,24 +51,17 @@ const GlobalStyle = createGlobalStyle`
       color: ${variable.baseColor};
     }
   }
-  /* .no-fouc {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .fouc {
-    visibility: visible;
-    opacity: 1;
-  } */
 `;
 
 
 function MyApp({ Component, pageProps }) {
-  /* if (typeof window !== "undefined") {
+  // For FOUC
+  if (typeof window !== "undefined") {
     const removeFouc = (foucElement) => {
       foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
     };
     removeFouc(document.documentElement);
-  } */
+  }
 
   return (
     <>

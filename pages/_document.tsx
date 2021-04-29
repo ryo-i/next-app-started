@@ -8,8 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      /* <Html className="no-fouc"> */
-      <Html>
+      <Html className="no-fouc">
         <Head />
         <body>
             <Main />
