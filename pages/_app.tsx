@@ -63,12 +63,12 @@ const GlobalStyle = createGlobalStyle`
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    // FOUC measures
     const removeFouc = (foucElement) => {
       foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
     };
-
-    removeFouc(document.documentElement);
+    window.onload = () => {
+      removeFouc(document.documentElement);
+    };
   });
 
   return (
