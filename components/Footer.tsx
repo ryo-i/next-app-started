@@ -9,7 +9,11 @@ const text = Data.footer.text;
 // Style
 const FooterTag = styled.footer`
   ${pageSize}
+  padding: 30px;
   text-align: center;
+  p {
+    margin: 0;
+  }
 `;
 
 

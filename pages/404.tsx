@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
 import Footer from '../components/Footer';
@@ -6,13 +7,13 @@ import Data from '../data/data.json';
 
 
 const headerTitle = Data.header.title;
-const pageTitle = 'このアプリについて';
-const pageText = 'アプリの概要をここに書く。';
+const pageTitle = '404ページ';
+const pageText = 'お探しのページは見つかりませんでした。';
 const headTitle = pageTitle + ' | ' + headerTitle;
 
 
 // Component
-function About() {
+function notFound() {
     return (
         <>
         <Head>
@@ -27,8 +28,8 @@ function About() {
             <h1>{ pageTitle }</h1>
             <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
             <section>
-                <h2>使い方</h2>
-                <p>アプリの説明説明説明説明説明説明説明説明</p>
+                <h2>Homeに戻る</h2>
+                <p>こちらからお戻りください→ <Link href="/"><a>Home</a></Link></p>
             </section>
             <Profile />
         </main>
@@ -37,4 +38,4 @@ function About() {
     );
 }
 
-export default About;
+export default notFound;

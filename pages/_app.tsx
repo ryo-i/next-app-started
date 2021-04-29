@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     section {
-      margin: 0 0 20px;
+      margin: 30px 0;
     }
     h1, h2, p, figure, ul, table {
       margin: 0 0 10px;
@@ -35,10 +35,12 @@ const GlobalStyle = createGlobalStyle`
     }
     p {
       line-height: 1.75;
+      margin: 0 0 10px;
     }
   }
   main {
     ${pageSize}
+    padding: 50px 50px 0;
     h1 {
       font-size: 1.5em;
     }

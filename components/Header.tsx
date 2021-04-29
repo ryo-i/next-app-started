@@ -15,11 +15,11 @@ const HeaderTag = styled.header`
   ${pageSize}
   text-align: center;
   background: ${variable.bgColor_g};
-  padding: 20px;
+  padding: 30px;
   h2 {
     font-size: 2em;
   }
-  nav, nav span, nav a {
+  nav span, nav a {
     padding-right: 0.5em;
   }
 `;
