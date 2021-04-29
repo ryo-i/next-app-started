@@ -50,24 +50,24 @@ const GlobalStyle = createGlobalStyle`
       color: ${variable.baseColor};
     }
   }
-  .no-fouc {
+  /* .no-fouc {
     visibility: hidden;
     opacity: 0;
   }
   .fouc {
     visibility: visible;
     opacity: 1;
-  }
+  } */
 `;
 
 
 function MyApp({ Component, pageProps }) {
-  if (typeof window !== "undefined") {
+  /* if (typeof window !== "undefined") {
     const removeFouc = (foucElement) => {
       foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
     };
     removeFouc(document.documentElement);
-  }
+  } */
 
   return (
     <>
