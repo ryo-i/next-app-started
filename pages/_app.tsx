@@ -43,6 +43,9 @@ const GlobalStyle = createGlobalStyle`
   main {
     ${pageSize}
     padding: 50px 50px 0;
+    @media(max-width: 600px) {
+      padding: 30px 30px 0;
+    }
     h1 {
       font-size: 1.5em;
     }
