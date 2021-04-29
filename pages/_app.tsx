@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react';
+import React from 'react';
 import Head from 'next/head'
 import CommonHead from '../components/CommonHead';
 import { createGlobalStyle } from 'styled-components';
@@ -10,14 +10,6 @@ const variable = cssVariables.variable;
 
 // Style
 const GlobalStyle = createGlobalStyle`
-  .no-fouc {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .fouc {
-    visibility: visible;
-    opacity: 1;
-  }
   body {
     margin: 0;
     padding: 0;
@@ -58,18 +50,24 @@ const GlobalStyle = createGlobalStyle`
       color: ${variable.baseColor};
     }
   }
+  .no-fouc {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .fouc {
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
+  if (typeof window !== "undefined") {
     const removeFouc = (foucElement) => {
       foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
     };
-    window.onload = () => {
-      removeFouc(document.documentElement);
-    };
-  });
+    removeFouc(document.documentElement);
+  }
 
   return (
     <>
