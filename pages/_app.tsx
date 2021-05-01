@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import Head from 'next/head'
 import CommonHead from '../components/CommonHead';
 import { createGlobalStyle } from 'styled-components';
@@ -59,12 +59,12 @@ const GlobalStyle = createGlobalStyle`
 
 function MyApp({ Component, pageProps }) {
   // For FOUC
-  if (typeof window !== "undefined") {
+  useEffect(() => {
     const removeFouc = (foucElement) => {
       foucElement.className = foucElement.className.replace('no-fouc', 'fouc');
     };
     removeFouc(document.documentElement);
-  }
+  });
 
   return (
     <>
