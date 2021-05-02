@@ -11,7 +11,7 @@ const pageTitle = Data.main.title;
 const pageText = Data.main.text;
 
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Head>
@@ -30,3 +30,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;
