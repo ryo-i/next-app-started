@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Data from '../data/data.json';
 import styled from 'styled-components';
-import { pageSize } from '../styles/mixin';
 import cssVariables from '../styles/variables.json';
 
 
@@ -12,7 +11,6 @@ const text = Data.header.text;
 
 // Style
 const HeaderTag = styled.header`
-  ${pageSize}
   text-align: center;
   background: ${variable.bgColor_g};
   padding: 30px;
