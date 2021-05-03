@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Data from '../data/data.json';
 import styled from 'styled-components';
+import { pageSize } from '../styles/mixin';
 import cssVariables from '../styles/variables.json';
 
 
@@ -13,7 +14,10 @@ const text = Data.header.text;
 const HeaderTag = styled.header`
   text-align: center;
   background: ${variable.bgColor_g};
-  padding: 30px;
+  .wrapper {
+    ${pageSize}
+    padding: 30px;
+  }
   h2 {
     font-size: 2em;
   }
@@ -27,13 +31,15 @@ const HeaderTag = styled.header`
 function Header() {
   return (
     <HeaderTag>
+      <div className="wrapper">
         <h2>{ title }</h2>
         <p dangerouslySetInnerHTML={{ __html: text }}></p>
-          <nav>
-            <span>MENU:</span>
-            <Link href="/"><a>Home</a></Link>
-            <Link href="/about"><a>About</a></Link>
-          </nav>
+        <nav>
+          <span>MENU:</span>
+          <Link href="/"><a>Home</a></Link>
+          <Link href="/about"><a>About</a></Link>
+        </nav>
+      </div>
     </HeaderTag>
   );
 }
