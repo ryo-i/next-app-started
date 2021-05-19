@@ -28,7 +28,29 @@ function About() {
             <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
             <section>
                 <h2>使い方</h2>
-                <p>アプリの説明説明説明説明説明説明説明説明</p>
+                <section>
+                    <h3>タイトル</h3>
+                    <p>説明説明説明説明説明説明説明説明</p>
+                </section>
+                <section>
+                    <h3>タイトル</h3>
+                    <p>説明説明説明説明説明説明説明説明</p>
+                </section>
+                <section>
+                    <h3>タイトル</h3>
+                    <p>説明説明説明説明説明説明説明説明</p>
+                </section>
+            </section>
+            <section>
+                <h2>詳細</h2>
+                <section>
+                    <h3>ブログ</h3>
+                    <p><a href="https://www.i-ryo.com/entry/xxxx">タイトル - クモのようにコツコツと</a></p>
+                </section>
+                <section>
+                    <h3>ソースコード（GitHub）</h3>
+                    <p><a href="https://github.com/ryo-i/xxxxx">リポジトリ</a></p>
+                </section>
             </section>
             <Profile />
         </main>
