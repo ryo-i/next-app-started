@@ -2,19 +2,17 @@
 
 React + Next.js + TypeScript + CSS in JS環境
 
+## 進捗
+
+- NCUパッケージを追加 [#1](https://github.com/ryo-i/next-app-started/issues/1)
+
 ## ブログ
 
-【React】Nextスターターキットを作った-1. 全体設定編
+※参考：[【React】Nextスターターキットを作った-1. 全体設定編](https://www.i-ryo.com/entry/2021/05/01/184600)
 
-※参考：[https://www.i-ryo.com/entry/2021/05/01/184600]
+※参考：[【React】Nextスターターキットを作った-2. コンポーネント編](https://www.i-ryo.com/entry/2021/05/02/101424)
 
-【React】Nextスターターキットを作った-2. コンポーネント編
-
-※参考：[https://www.i-ryo.com/entry/2021/05/02/101424]
-
-【React】Nextスターターキットを作った-3. ページファイル編
-
-※参考：[https://www.i-ryo.com/entry/2021/05/02/102630]
+※参考：[【React】Nextスターターキットを作った-3. ページファイル編](https://www.i-ryo.com/entry/2021/05/02/102630)
 
 ## プレビュー
 
