@@ -1,6 +1,13 @@
 import React, { useEffect }  from 'react';
+import styled from 'styled-components';
 import { hello } from '../modules/hello/hello';
 import { inner } from '../data/data.json';
+
+
+// Style
+const H2 = styled.h2`
+  color: red;
+`;
 
 
 // Component
@@ -15,7 +22,7 @@ function Inner() {
         inner.length >= 1
           ? inner.map((inner, index) =>
             <section key={ index }>
-              <h2>{ inner.title }</h2>
+              <H2>{ inner.title }</H2>
               <p dangerouslySetInnerHTML={{ __html: inner.text }}></p>
             </section>
           )
