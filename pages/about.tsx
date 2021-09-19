@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
@@ -9,6 +10,29 @@ const headerTitle = Data.header.title;
 const pageTitle = 'このアプリについて';
 const pageText = 'アプリの概要をここに書く。';
 const headTitle = pageTitle + ' | ' + headerTitle;
+
+
+// CSS in JS
+const Main = styled.main`
+    h2 {
+        background: #eee;
+        margin: 60px 0 20px;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    h3 {
+        margin: 40px 0 10px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    figure {
+        margin: 0 0 30px;
+        img {
+            width: 100%;
+            box-shadow: 0 0 15px 2px rgb(0 0 0 / 10%);
+        }
+    }
+`;
 
 
 // Component
@@ -23,7 +47,7 @@ function About() {
         </Head>
 
         <Header />
-        <main>
+        <Main>
             <h1>{ pageTitle }</h1>
             <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
             <section>
@@ -53,7 +77,7 @@ function About() {
                 </section>
             </section>
             <Profile />
-        </main>
+        </Main>
         <Footer />
         </>
     );
