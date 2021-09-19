@@ -4,7 +4,7 @@ React + Next.js + TypeScript + CSS in JS環境
 
 ## 進捗
 
-- NCUパッケージを追加 [#1](https://github.com/ryo-i/next-app-started/issues/1)
+- data.jsonからinnerだけインポート [#1](https://github.com/ryo-i/next-app-started/issues/1)
 
 ## ブログ
 
