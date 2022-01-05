@@ -8,7 +8,7 @@ React + Next.js + TypeScript + CSS in JS環境
 
 ## 進捗（コミット）
 
-- aboutページにCSS設定を追加 [#1](https://github.com/ryo-i/next-app-started/issues/1)
+- aboutページに画像サイズ設定を修正 [#1](https://github.com/ryo-i/next-app-started/issues/1)
 
 ## 詳細（ブログ）
 

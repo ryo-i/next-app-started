@@ -28,7 +28,7 @@ const Main = styled.main`
     figure {
         margin: 0 0 30px;
         img {
-            width: 100%;
+            max-width: 100%;
             box-shadow: 0 0 15px 2px rgb(0 0 0 / 10%);
         }
     }
