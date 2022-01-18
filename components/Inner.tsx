@@ -1,7 +1,7 @@
 import React, { useState, useEffect }  from 'react';
 import styled from 'styled-components';
 import { hello } from '../modules/hello/hello';
-import { inner } from '../data/data.json';
+import data from '../data/data.json';
 
 
 // CSS in JS
@@ -24,9 +24,9 @@ function Inner() {
   return (
     <>
       {
-        // inner.length >= 5 // test
-        inner.length >= 1
-          ? inner.map((inner, index) =>
+        // data.inner.length >= 5 // test
+        data.inner.length >= 1
+          ? data.inner.map((inner, index) =>
             <section key={ index }>
               <H2>{ inner.title }</H2>
               <p dangerouslySetInnerHTML={{ __html: inner.text }}></p>
