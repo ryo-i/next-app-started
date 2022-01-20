@@ -8,7 +8,7 @@ React + Next.js + TypeScript + CSS in JS環境
 
 ## 進捗（コミット）
 
-- Innerコンポーネントでimportしているdata.jsonの書き方を修正 [#1](https://github.com/ryo-i/next-app-started/issues/1)
+- 環境変数の見本ファイルを追加 [#1](https://github.com/ryo-i/next-app-started/issues/1)
 
 ## 詳細（ブログ）
 
