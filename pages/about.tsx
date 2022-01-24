@@ -51,6 +51,12 @@ function About() {
             <h1>{ pageTitle }</h1>
             <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
             <section>
+                <h2>進捗</h2>
+                <ul>
+                    <li>進捗をaboutに追加 <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
+                </ul>
+            </section>
+            <section>
                 <h2>使い方</h2>
                 <section>
                     <h3>タイトル</h3>
