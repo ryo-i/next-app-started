@@ -8,7 +8,7 @@ React + Next.js + TypeScript + CSS in JS環境
 
 ## 進捗（コミット）
 
-- パッケージをアップデート [#1](https://github.com/ryo-i/next-app-started/issues/1)
+- APIのデータをapiフォルダ配下に移動 [#1](https://github.com/ryo-i/next-app-started/issues/1)
 
 ## 詳細（ブログ）
 

@@ -1,4 +1,4 @@
-const url = 'data/hello.json';
+const url = '../api/hello';
 
 async function hello () {
     try {
