@@ -53,7 +53,7 @@ function About() {
             <section>
                 <h2>進捗</h2>
                 <ul>
-                    <li>APIのデータをapiフォルダ配下に移動 <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
+                    <li>外部サイトを別タブに <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
                 </ul>
             </section>
             <section>
@@ -75,11 +75,13 @@ function About() {
                 <h2>詳細</h2>
                 <section>
                     <h3>ブログ</h3>
-                    <p><a href="https://www.i-ryo.com/entry/xxxx">タイトル - クモのようにコツコツと</a></p>
+                    <p><a href="https://www.i-ryo.com/entry/2021/05/01/184600" target="_blank">【React】Nextスターターキットを作った-1 - クモのようにコツコツと</a></p>
+                    <p><a href="https://www.i-ryo.com/entry/2021/05/02/101424" target="_blank">【React】Nextスターターキットを作った-2 - クモのようにコツコツと</a></p>
+                    <p><a href="https://www.i-ryo.com/entry/2021/05/02/102630" target="_blank">【React】Nextスターターキットを作った-3 - クモのようにコツコツと</a></p>
                 </section>
                 <section>
                     <h3>ソースコード（GitHub）</h3>
-                    <p><a href="https://github.com/ryo-i/xxxxx">リポジトリ</a></p>
+                    <p><a href="https://github.com/ryo-i/next-app-started" target="_blank">リポジトリ</a></p>
                 </section>
             </section>
             <Profile />
