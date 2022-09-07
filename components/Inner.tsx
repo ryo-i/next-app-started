@@ -1,7 +1,7 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect, useContext }  from 'react';
+import { indexContext } from '../context/indexContext';
 import styled from 'styled-components';
 import { hello } from '../modules/hello/hello';
-import data from '../data/data.json';
 
 
 // CSS in JS
@@ -15,6 +15,7 @@ function Inner() {
   // Hooks
   const [title, setTitle] = useState('内容が無いよう');
   const [text, setText] = useState('へんじがない、ただのしかばねのようだ。');
+  const {innerData, setInnerData} = useContext(indexContext);
 
   useEffect(() => {
     hello();
@@ -24,9 +25,9 @@ function Inner() {
   return (
     <>
       {
-        // data.inner.length >= 5 // test
-        data.inner.length >= 1
-          ? data.inner.map((inner, index) =>
+        // innerData.length >= 5 // test
+        innerData.length >= 1
+          ? innerData.map((inner, index) =>
             <section key={ index }>
               <H2>{ inner.title }</H2>
               <p dangerouslySetInnerHTML={{ __html: inner.text }}></p>

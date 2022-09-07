@@ -53,7 +53,7 @@ function About() {
             <section>
                 <h2>進捗</h2>
                 <ul>
-                    <li>外部サイトを別タブに <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
+                    <li>data.innerをコンテキストで渡す <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
                 </ul>
             </section>
             <section>

@@ -1,3 +1,5 @@
+import React, { useState }  from 'react';
+import { indexContext } from '../context/indexContext';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Inner from '../components/Inner';
@@ -12,6 +14,9 @@ const pageText = Data.main.text;
 
 
 function Home() {
+  // Hooks
+  const [innerData, setInnerData] = useState(Data.inner);
+
   return (
     <>
       <Head>
@@ -24,7 +29,9 @@ function Home() {
       <main>
         <h1>{ pageTitle }</h1>
         <p dangerouslySetInnerHTML={{ __html: pageText }}></p>
-        <Inner />
+        <indexContext.Provider value={{innerData, setInnerData}} >
+          <Inner />
+        </indexContext.Provider>
       </main>
       <Footer />
     </>
