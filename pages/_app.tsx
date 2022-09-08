@@ -40,13 +40,47 @@ const GlobalStyle = createGlobalStyle`
       margin: 0 0 10px;
     }
     ul, ol {
+      margin: 1em 0;
       padding: 0 0 0 1.5em;
+      li {
+        margin: 0 0 0.5em;
+      }
     }
-    dt {
-      font-weight: bold;
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1em 0;
+      @media(max-width: 600px) {
+        display: block;
+      }
+      dt {
+        font-weight: bold;
+        width: 20%;
+        padding-right: 1em;
+        @media(max-width: 600px) {
+          width: 100%;
+          padding: 0;
+        }
+        ::after {
+          content: "："
+        }
+      }
+      dd {
+        margin: 0 0 0.5em;
+        width: 80%;
+        @media(max-width: 600px) {
+          width: 100%;
+        }
+      }
     }
-    dd {
-      margin: 0 0 1em;
+    table {
+      width: 100%;
+      margin: 1em 0;
+      border-spacing: 0;
+      th, td {
+        padding: 5px;
+        border-bottom:1px solid #ccc;
+      }
     }
   }
   main {
@@ -60,7 +94,6 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
       font-size: 1.5em;
-      color: ${variable.baseColor};
     }
     h3 {
       font-size: 1.25em;

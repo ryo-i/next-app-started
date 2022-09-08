@@ -31,6 +31,11 @@ const Main = styled.main`
             max-width: 100%;
             box-shadow: 0 0 15px 2px rgb(0 0 0 / 10%);
         }
+        figcaption {
+            margin: 0 0 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
     }
 `;
 
@@ -53,7 +58,7 @@ function About() {
             <section>
                 <h2>進捗</h2>
                 <ul>
-                    <li>data.innerをコンテキストで渡す <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
+                    <li>CSSの初期設定を追加 <a href="https://github.com/ryo-i/next-app-started/issues/1">#1</a></li>
                 </ul>
             </section>
             <section>
